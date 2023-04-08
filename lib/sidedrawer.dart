@@ -58,29 +58,6 @@ Widget navbar(context, key) {
               ),
               GestureDetector(
                 onTap: () {
-                  STM().redirect2page(context, ScrapImpact());
-                  close(key);
-                },
-                child: Container(
-                  margin: EdgeInsets.only(right: Dim().d20, left: Dim().d20),
-                  // decoration: BoxDecoration(color: Color(0xffFABDim().d400)),
-                  child: ListTile(
-                    leading: SvgPicture.asset('assets/scrap.svg'),
-                    title: Text(
-                      'Scrap Impact',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: Dim().d4,
-              ),
-              GestureDetector(
-                onTap: () {
                   STM().redirect2page(context, MyProfile());
                   close(key);
                 },
@@ -97,7 +74,7 @@ Widget navbar(context, key) {
                           fontWeight: FontWeight.w500),
                     ), //
                   ),
-                ),
+                ), 
               ),
               SizedBox(
                 height: Dim().d4,

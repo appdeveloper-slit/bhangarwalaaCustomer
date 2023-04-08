@@ -72,8 +72,8 @@ class _HomeState extends State<Home> {
             );
           }),
           title: Image.asset(
-            'assets/newlogo.png',
-            height: Dim().d40,
+            'assets/logo80.png',
+            height: Dim().d56,
           ),
           centerTitle: true,
           actions: [

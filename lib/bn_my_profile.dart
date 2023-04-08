@@ -775,8 +775,7 @@ class _MyProfileState extends State<MyProfile> {
       STM().displayToast(message);
       if (widget.isEdit) {
         STM().back2Previous(ctx);
-        var v =
-            "${addressCtrl.text.trim()} ${nearbyCtrl.text.trim()} ${cityCtrl.text.trim()} ${stateCtrl.text.trim()} - ${pincodevalue}";
+        var v = "${addressCtrl.text.trim()} ${nearbyCtrl.text.trim()} ${cityCtrl.text.trim()} ${stateCtrl.text.trim()} - ${pincodevalue}";
         RequestDetailsPage.controller.sink.add(v);
         RequestDetailsPage.controller1.sink.add(sLocation);
       }
